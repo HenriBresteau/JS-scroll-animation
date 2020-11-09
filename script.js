@@ -24,3 +24,8 @@ window.addEventListener('scroll', function () {
         },1500)
     }
 })
+
+document.getElementById('close').addEventListener('click', () => {
+    popup.style.opacity = '0';
+    popup.style.transform = 'translateX(500px)';
+})
