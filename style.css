@@ -86,9 +86,9 @@ p::first-letter {
 #img-improvise {
   width: 60%;
   padding: 2rem;
-  /* opacity: 0;
+  opacity: 0;
   transform: translateX(-200px);
-  transition: 1s ease-in; */
+  transition: 1s ease-in;
 }
 .dummy-improvise {
   display: flex;
@@ -129,9 +129,9 @@ p::first-letter {
   background: linear-gradient(90deg, #30587A, rgb(36, 113, 180));
   border-radius: 76% 24% 90% 10% / 20% 85% 15% 80%;
   box-shadow: 0 5px 10px black;
-  /* opacity: 0;
+  opacity: 0;
   transform: translateX(400px);
-  transition: 1s ease-out; */
+  transition: 1s ease-out;
 }
 .pop-up-container {
   width: 100%;
