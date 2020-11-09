@@ -1,5 +1,6 @@
 const imgImprovise = document.getElementById("img-improvise");
 const popup = document.getElementById('pop-up');
+let playOnce = true;
 
 window.addEventListener('scroll', function () {
     
@@ -17,12 +18,16 @@ window.addEventListener('scroll', function () {
     }
 
     // NEWSLETTER POPUP
-    if ( scrollValue > 0.84 ) {
-        setTimeout( ()=>{
-            popup.style.opacity = '1';
-            popup.style.transform = 'none';
-        },1500)
-    }
+    function playFunctionOnce() {
+        if ( scrollValue > 0.84 && playOnce) {
+            setTimeout( ()=>{
+                popup.style.opacity = '1';
+                popup.style.transform = 'none';
+            },1500)
+            playOnce = false;
+        }
+    };
+    playFunctionOnce();
 })
 
 document.getElementById('close').addEventListener('click', () => {
