@@ -15,4 +15,12 @@ window.addEventListener('scroll', function () {
         imgImprovise.style.opacity = '1';
         imgImprovise.style.transform = 'none';
     }
+
+    // NEWSLETTER POPUP
+    if ( scrollValue > 0.84 ) {
+        setTimeout( ()=>{
+            popup.style.opacity = '1';
+            popup.style.transform = 'none';
+        },1500)
+    }
 })
